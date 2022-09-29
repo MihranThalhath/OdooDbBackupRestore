@@ -34,13 +34,13 @@ import time
 # Change the parameters accordingly
 odoo_directory = ""  # Odoo source code location. This is used to get the filestore path. If you are using a custom filestore directory,
                      # change the `filestore_directory` parameter accordingly.
+db_name = ""
 filestore_directory = os.path.join(odoo_directory, ".local/share/Odoo/filestore", db_name)
 backup_directory = ""  # Path to store backup file
 db_host = ""
 db_port = ""
 db_username = ""
 db_password = ""
-db_name = ""
 owner_user = ""  # The user who should be the owner of the backup file
 odoo_version = ""  # (Eg.: 13.0, 14.0, 15.0)
 delete_old_files = False  # Value can either be False or True. CAUTION: This deletes all zip files older than `number_of_days`.
