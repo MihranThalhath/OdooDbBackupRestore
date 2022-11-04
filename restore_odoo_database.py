@@ -37,13 +37,13 @@ import zipfile
 # Change the parameters accordingly
 odoo_directory = ""  # Odoo source code location. This is used to get the filestore path. If you are using a custom filestore directory,
                      # change the `filestore_destination` parameter accordingly.
+db_name = ""
 filestore_destination = os.path.join(odoo_directory, ".local/share/Odoo/filestore", db_name)
 backup_file = ""  # Path of the zip file to be restored
 db_host = ""
 db_port = ""
 db_username = ""
 db_password = ""
-db_name = ""
 # CAUTION: make sure that remote_working_directory is not an actual directory
 # as we will be deleting the directory at the end of this script
 remote_working_directory = "%s/tmp_db_restore_directory" % os.path.expanduser("~")
